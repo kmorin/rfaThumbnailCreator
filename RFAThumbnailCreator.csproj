@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RFAThumbnailCreator</RootNamespace>
-    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <AssemblyName>RFAThumbnailCreator</AssemblyName>
     <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
