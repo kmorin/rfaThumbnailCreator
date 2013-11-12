@@ -84,5 +84,25 @@ namespace RFAThumbnailCreator
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                string dir = dialog.SelectedPath;
+
+                DirectoryInfo di = new DirectoryInfo(dir);
+                var directories = di.GetFiles("*.rfa.doc", SearchOption.AllDirectories);
+
+                foreach (FileInfo fi in directories)
+                {
+                    string newName = fi.FullName.Remove(fi.FullName.Length - 4);
+                    File.Move(fi.FullName, newName);
+
+                }
+            }
+        }
     }
 }
